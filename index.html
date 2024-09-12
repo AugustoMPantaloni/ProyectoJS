@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+    </style>
     <title>simulador de creador de personajes</title>
+
 </head>
-<body>
-    <header>
-        <div>
-            <h1> ¿LISTO PARA CREAR A TU HEROE? </h1>
-        </div>
+<body class="body">
+    <header class="header">
+        <div class="contenedorTituloImagen">
+            <img src="./img/pergamino.png" class="styleImagen"/>
+            <div class="titulo">
+                <h1> ¿LISTO PARA CREAR A TU HEROE? </h1>
+            </div>
+        </div>    
     </header>
-    <main>
-        <div>
+    <main class="main">
+        <div class="nombreHeroe">
             <form>
                 <input placeholder="NOMBRE DE TU HEROE"/>
             </form>
         </div>
-        <div>
-            <img src="./img/user-profile-icon-free-vector-removebg-preview.png"/>
+        <div class="avatar">
+            <img src="./img/avatar.png"/>
         </div>
-        <div>
+        <div class="raza">
             <select>
                 <option disabled selected>RAZA</option>
                 <option>Humano</option>
@@ -28,6 +36,8 @@
                 <option>Demonio</option>
                 <option>Orco</option>
             </select>
+        </div>
+        <div class="clase">    
             <select>
                 <option disabled selected>CLASE</option>
                 <option>Barbaro</option>
@@ -35,6 +45,8 @@
                 <option>Arquero</option>
                 <option>Mago</option>
             </select>
+        </div>
+        <div class="habilidad">    
             <select>
                 <option disabled selected>HABILIDAD</option>
                 <option>Fuerza</option>
@@ -42,11 +54,11 @@
                 <option>Destreza</option>
                 <option>Curacion</option>
             </select>
-        </div>
-        <div>
-            <input type="submit" value="CREAR HEROE">
+        </div>    
+        <div class="crearHeroe">
+            <input type="submit" value="SALIR A LA AVENTURA" >
         </div>   
     </main>
-    <script src="index.js"> </script>
+    <script src="./js/index.js"> </script>
 </body>
 </html>

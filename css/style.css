@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-image: url(../img/bodyFondo.jpg);
+}
+.header{
+    width: 100%;
+    height: 11.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.contenedorTituloImagen {
+    position: relative;
+    width: fit-content;
+
+}
+.styleImagen {
+    width: 800px;
+    height: 350px;
+}
+.titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+H1 {
+    font-family: "MedievalSharp";
+    font-weight: 800;
+    font-style: normal;
+}
+.main{
+    width: 100%;
+    height: 50rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 185px);
+    grid-template-areas: 
+    ". nombre ."
+    "raza avatar ."
+    "clase avatar ."
+    "habilidad . ."
+    ". crearHeroe .";
+}
+.nombreHeroe{
+    grid-area: nombre;
+    justify-self: center;
+    align-self: center;
+}
+input {
+    border: 2px solid #5d3a1a; 
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #eae2d8;
+    color: #333;
+}
+.avatar{
+    grid-area: avatar;
+    justify-self: center;
+    align-self: center;
+}
+.raza{
+    grid-area:raza;
+    justify-self: center;
+}
+.clase{
+    grid-area: clase;
+    justify-self: center;
+}
+.habilidad{
+    grid-area: habilidad;
+    justify-self: center;
+}
+.crearHeroe{
+    grid-area: crearHeroe;
+    justify-self: center;
+}
+
+select{
+    appearance: none;
+    background-color: #6b4226;
+    color: #f4e3c3;
+    padding: 10px;
+    border: 2px solid #4d2f1a;
+    border-radius: 5px;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    width: 150px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23f4e3c3" d="M2 0L0 2h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+}
